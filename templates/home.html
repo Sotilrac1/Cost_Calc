@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<div class="home">
+<form action="# " method="POST">
+    <div class="form-group">
+
+      <label for="">Selling Price</label>
+      <input type="text"
+        class="form-control" name="selling_price" id="selling_price" aria-describedby="helpId" placeholder="in dollars">
+      <small id="helpId" class="form-text text-muted">This is the retail cost of the bottle</small>
+      <br>
+    
+    
+        <label for="">Case Cost</label>
+        <input type="text"
+          class="form-control" name="case_cost" id="Case_cost" aria-describedby="helpId" placeholder="in dollars">
+        <small id="helpId" class="form-text text-muted">This is the acutal cost of the case</small>
+        <br>
+      
+      
+        <label for="">Case Size</label>
+        <input type="text"
+          class="form-control" name="case_size" id="Case_size" placeholder="12 or 24">
+
+          <br>
+        <button type="submit" class="btn btn-primary">Calculate</button>
+
+      </div>
+      <br>
+</form>
+
+
+
+
+</div>
+{% endblock %} 
